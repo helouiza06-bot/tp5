@@ -1,36 +1,26 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Météo</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Dashboard Météo</h1>
-    </header>
+<!--Détails météorologiques-->
+<section id ="weather-details" class="details-section">
+  <h2>Détails météorologiques</h2>
+  <div class="details-grid">
+    
+    <div class="detail-card">
+       <div class="detail-icon">💧</div>
+       <h3>Humidité</h3>
+       <p id="humidity">-- %</p>
+    </div>
 
-    <!-- Zone réservée aux détails météo (Membre 2) -->
-    <section id="weather-details" class="card">
-      <h2>Détails Météo</h2>
-      <div class="details-grid">
-        <div class="detail-item">
-          <span class="label">Humidité :</span>
-          <span id="humidity">65%</span>
-        </div>
-        <div class="detail-item">
-          <span class="label">Vent :</span>
-          <span id="wind">15 km/h</span>
-        </div>
-        <div class="detail-item">
-          <span class="label">Pression :</span>
-          <span id="pressure">1013 hPa</span>
-        </div>
-      </div>
-    </section>
+    <div class="detail-card">
+       <div class="detail-icon">💨</div>
+       <h3>Vitesse du vent</h3>
+       <p id="wind">-- km/h</p>
+    </div>
+
+    <div class="detail-card">
+            <div class="detail-icon">🌡️</div>
+            <h3>Pression atmosphérique</h3>
+            <p id="pressure">-- hPa</p>
+    </div>
+
   </div>
-  <script src="app.js"></script>
-</body>
-</html>
+</section>
+<script type="module" src="app.js"></script>
