@@ -1,3 +1,6 @@
+/* le style de premier partie */
+
+
 div.card{
     border: 2px double rgb(252, 252, 5);
     background-color: rgba(120, 171, 207, 0.498);
@@ -67,3 +70,56 @@ header h1 {
   background-color: #e8f4f8;
   border-radius: 8px;
 }
+/*le style de deuxieme partie */
+.details-section {
+  margin: 35px 0;
+}
+
+.details-section h2 {
+  text-align:center;
+  color: #1e3a8a;
+  margin-bottom:25px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.detail-card {
+  background: white;
+  padding:25px 15px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.detail-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.detail-icon {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.detail-card h3 {
+  color: #475569;
+  font-size: 16px;
+  margin-bottom:12px;
+}
+
+.detail-card p {
+  color: #2563eb;
+  font-size:24px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px){
+  .details-grid{
+    grid-template-columns: 1fr;
+  }}
