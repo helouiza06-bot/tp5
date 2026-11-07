@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Météo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header id="headbar">
+      <h1>Dashboard Météo</h1>
+    </header>
+
+  <div class="container"></div>
+    <section id="search-section">
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="Entrez une ville...">
+        <button id="search-btn">Rechercher</button>
+      </div>
+      <div class="weather-main card">
+        <h2 id="city-name">Paris</h2>
+        <p id="temperature">22°C</p>
+        <p id="weather-description">Ensoleillé</p>
+      </div>
+
+      <div class="weather-main card">
+        <h2 id="city-name">Marrakech</h2>
+        <p id="temperature">28°C</p>
+        <p id="weather-description">Ensoleillé</p>
+      </div>
+
+      <div class="weather-main card">
+        <h2 id="city-name">Rabat</h2>
+        <p id="temperature">19°C</p>
+        <p id="weather-description">Ensoleillé</p>
+      </div>
+
+      <div class="weather-main card">
+        <h2 id="city-name">kenitra</h2>
+        <p id="temperature">27°C</p>
+        <p id="weather-description">Ensoleillé</p>
+      </div>
+    </section>
+  </div>
+  
+  
+<!--Détails météorologiques-->
+<section id ="weather-details" class="details-section">
+  <h2>Détails météorologiques</h2>
+  <div class="details-grid">
+    
+    <div class="detail-card">
+       <div class="detail-icon">💧</div>
+       <h3>Humidité</h3>
+       <p id="humidity">-- %</p>
+    </div>
+
+    <div class="detail-card">
+       <div class="detail-icon">💨</div>
+       <h3>Vitesse du vent</h3>
+       <p id="wind">-- km/h</p>
+    </div>
+
+    <div class="detail-card">
+            <div class="detail-icon">🌡️</div>
+            <h3>Pression atmosphérique</h3>
+            <p id="pressure">-- hPa</p>
+    </div>
+
+  </div>
+</section>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
+
